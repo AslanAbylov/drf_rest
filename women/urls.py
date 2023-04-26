@@ -7,9 +7,6 @@ urlpatterns = [
     path('women/<int:pk>/', WomenRetrieveUpdateApiView.as_view()),
     path('womendelete/<int:pk>/', WomenRetrieveDelete.as_view()),
     path('women/drf-auth/', include('rest_framework.urls')),
-    re_path('auth/', include('djoser.urls.authtoken')),
-    path(r'^auth/', include('djoser.urls')),
-
 ]
 
 
